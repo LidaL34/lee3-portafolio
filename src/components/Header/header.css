@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 0;
+}
+
+.header img {
+    width: 40px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 80px;
+}
