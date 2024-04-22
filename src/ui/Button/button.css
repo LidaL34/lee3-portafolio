@@ -1,0 +1,28 @@
+.primary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: transparent;
+    border: 1px solid var(--secondary-blue);
+    font-size: 24px;
+    color: var(--white);
+
+    padding: 0 0 0 50px;
+}
+
+.btn-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary-blue);
+    color: var(--main-black);
+
+    padding: 5px;
+    margin: 0 0 0 50px;
+}
+
+.btn-right .web-icon {
+    font-size: 50px;
+}
