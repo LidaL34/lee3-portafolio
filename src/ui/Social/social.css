@@ -1,0 +1,21 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: auto;
+    border: none;
+    background-color: var(--secondary-blue);
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    padding: 8px;
+}
+
+
+.social svg {
+    color: var(--main-black);
+    font-size: 25px;
+    cursor: pointer;
+}

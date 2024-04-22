@@ -1,3 +1,47 @@
-#root {
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.hero img {
+    height: 528px;
+}
+
+.hero-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px 0;
+}
+
+.hero-info-container {
+    width: 391px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.title #empathy  {
+     padding: 0 205px 0 0;   
+}
+
+.title #inpixels {
+    display: inline;
+    position: relative;
+    align-self: center;
+}
+
+#inpixles::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    height: 2px var(--secondary-blue);
+}
+
+.hero-info-container .primary-btn {
+    align-self: flex-end;
 }
