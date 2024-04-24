@@ -8,6 +8,18 @@ import lee3logo from '/lee3-logo.svg'
 import './header.css';
 
 export function Header() {
+
+    const handleOnClick = (scrollId) => {
+
+        if (scrollId) {
+            console.log(scrollId);
+            const element = document.getElementById(scrollId)
+            element.scrollIntoView({behavior : 'smooth'})
+        }
+
+    }
+
+
     return (
         <>
             <header className="header container">
@@ -15,9 +27,11 @@ export function Header() {
                 <div className="links">
                     <ul>
                         {
-                            headerNavLinks.map(({ id, name }) => {
+                            headerNavLinks.map(({ id, name, scrollTo }) => {
                                 return (
-                                    <li key={id}>
+                                    <li 
+                                    key={id}
+                                    onClick={() => handleOnClick(scrollTo)}>
                                         {name}
                                     </li>
                                 )

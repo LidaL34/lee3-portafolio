@@ -57,6 +57,7 @@ function App() {
             Creating pixel-perfect designs with a customer-centric experience
           </p>
           <Button
+          scrollTo={'contact'}
             className={'primary-btn'}
             name={'Contact'} />
         </div>
@@ -89,7 +90,9 @@ function App() {
         </article>
       </section>
 
-      <section className="my-work-section">
+      <section
+      id='myWork'
+      className="my-work-section">
         <div className="my-work-title">
           <Title
             sectionTitle={'My Work'}
@@ -119,7 +122,9 @@ function App() {
             category={'UX UI Projct'} />
         </article>
       </section>
-      <section className="my-story container">
+      <section 
+      id='myStory'
+      className="my-story container">
         <img src={myStoryImg} alt="Lee-Sory-Image" />
         <article className='story'>
           <div className="section-title">
@@ -145,7 +150,9 @@ function App() {
             />
         </article>
       </section>
-      <section className="contact">
+      <section 
+      id='contact'
+      className="contact">
           <ContactMe/>
           <article>
             <h1>Contact</h1>
