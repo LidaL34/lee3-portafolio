@@ -2,6 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100vh;
+
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px 0;
 }
 
 .hero img {
@@ -16,7 +25,11 @@
 }
 
 .hero-info-container {
-    width: 391px;
+    width: 480px;
+}
+
+.hero-info-container p {
+    max-width: 391px;
 }
 
 .title {
@@ -25,23 +38,114 @@
     gap: 10px 0;
 }
 
-.title #empathy  {
-     padding: 0 205px 0 0;   
-}
 
-.title #inpixels {
-    display: inline;
-    position: relative;
-    align-self: center;
-}
-
-#inpixles::before {
-    position: absolute;
-    left: 0;
-    content: '';
-    height: 2px var(--secondary-blue);
+.deco-container {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
 }
 
 .hero-info-container .primary-btn {
+    margin: 42px 0 0;
     align-self: flex-end;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 60px;
+
+    padding: 50px 60px 0;
+}
+
+.my-work-section {
+    margin: 128px 0 0;
+    padding: 115px 124px 0;
+    background-color: var(--grey);
+
+}
+
+.my-work-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+    grid-template-rows: repeat(3, minmax(460px, 1fr));
+    grid-template-areas:
+        'p1 p1'
+        'p2 p3'
+        'p4 p4'
+    ;
+    gap: 20px;
+
+    padding: 56px 100px 127px;
+}
+
+
+.my-story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 128px 0;
+}
+
+.my-story img {
+    width: 462px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+    gap: 40px 0;
+}
+
+.story .section-title p {
+    color: #7B7B7B;
+}
+
+.story img {
+    width: 278px;
+}
+
+.story .primary-btn {
+    align-self: flex-end;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 160px 124px;
+    margin: 0 0 128px;
+
+    background-color: var(--grey);
+}
+
+.contact article {
+    width: 30%;
+}
+
+.contact article p {
+    margin: 77px 0;
+}
+
+
+
+
+@media screen and (max-width : 1440px) {
+    .my-work-section {
+        padding: 115px 104px 0;
+    }
+
+    .contact {
+        padding: 160px 104px;
+    }
 }

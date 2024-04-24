@@ -1,15 +1,15 @@
 export const socialLinks = [
     {
         id : 'instagram',
-        link : 'link instagram'
+        link : 'https://www.instagram.com/lidalee_01113/?hl=en'
     },
     {
         id : 'linkedin',
-        link : 'link linkedin'
+        link : 'https://www.linkedin.com/in/lida-loaiza/'
     },
     {
         id : 'behance',
-        link : 'link behance'
+        link : 'https://www.behance.net/lidaloaiza'
     },
 
 ]

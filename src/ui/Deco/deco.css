@@ -1,0 +1,17 @@
+.deco {
+    position: relative;
+    width: 98px;
+    height: 3px;
+    background-color: var(--secondary-blue);
+}
+
+.deco-square {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    font-size: 12px;
+    color: var(--secondary-blue);
+}

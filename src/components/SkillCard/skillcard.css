@@ -1,0 +1,18 @@
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    
+    padding: 72px 40px 65px;
+
+    background-color: var(--grey);
+}
+
+.skill-card p {
+    font-size: 20px;
+}
+
+.skill-card svg {
+    font-size: 50px;
+    color: var(--secondary-blue);
+}

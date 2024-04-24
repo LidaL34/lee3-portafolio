@@ -9,6 +9,29 @@
     color: var(--white);
 
     padding: 0 0 0 50px;
+
+    cursor: pointer;
+}
+
+.secondary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--secondary-blue);
+    border: 1px solid var(--secondary-blue);
+    font-size: 24px;
+    color: var(--white);
+
+    padding: 0 0 0 50px;
+    
+    cursor: pointer;
+}
+
+.secondary-btn .btn-right {
+    color: var(--secondary-blue);
+    background-color: var(--main-black);
+    align-self: flex-end;
 }
 
 .btn-right {
@@ -21,6 +44,9 @@
 
     padding: 5px;
     margin: 0 0 0 50px;
+
+    cursor: pointer;
+    
 }
 
 .btn-right .web-icon {

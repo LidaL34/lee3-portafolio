@@ -1,0 +1,94 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    border-radius: 14px;
+
+    padding: 0 30px 12px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.project-info {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 22px;
+
+    border-radius: 6px;
+
+    background-color: #0b0c10cb;
+
+    transition: all 0.3s ease;
+
+}
+
+.project:hover .project-info,
+.project-info:hover {
+    transform: scale(1.1);
+    background-color: var(--secondary-blue);
+}
+.project .Marketplace:hover, .project .Cleo:hover .project-info,
+.project-info:hover {
+    transform: scale(1.2);
+    background-color: var(--secondary-blue);
+}
+
+.project-info p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.project-info svg {
+    color: var(--purple);
+    font-size: 30px;
+}
+
+.Nexus {
+    background-image: url('../../assets/images/nexus.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: p1;
+}
+
+.Marketplace {
+    background-image: url('../../assets/images/marketplace.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: p2;
+}
+
+.Cleo {
+    background-image: url('../../assets/images/cleo.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: p3;
+}
+
+.OnCheck {
+    background-image: url('../../assets/images/oncheck.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: p4;
+
+}
+
+@media screen and (max-width : 1440px) {
+    .Marketplace {
+        background-position: right;
+    }
+    .Cleo {
+        background-position: center;
+    }
+ 
+}

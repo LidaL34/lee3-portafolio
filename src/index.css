@@ -60,12 +60,17 @@ body {
 }
 
 .container {
-  margin: 0 104px;
+  margin: 0 124px;
 }
 
 h1 {
   font: 700 66px Gilroy;
   color: var(--white);
+}
+
+h3 {
+  font : 500 34px Gilroy;
+  color: var(--purple);
 }
 
 p {
@@ -88,3 +93,9 @@ li:hover {
   text-decoration: underline;
 }
 
+
+@media screen and (max-width : 1440px) {
+  .container {
+    margin: 0 104px;
+  }
+}

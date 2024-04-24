@@ -1,0 +1,67 @@
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--secondary-blue);
+    background-color: transparent;
+
+    padding: 10px 20px;
+
+    font-size: 24px;
+    color: var(--white);
+
+    outline: none;
+    cursor: pointer;
+
+
+}
+
+.input-group textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--secondary-blue);
+    outline: none;
+    padding: 10px 20px;
+
+    color: var(--white);
+    font-size: 24px;
+
+    resize: none;
+    cursor: pointer;
+
+}
+
+.input-group label {
+
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+    padding: 0 20px;
+
+    font-size: 24px;
+    color: var(--white);
+
+}
+
+.input-group :is(input:focus, input:not(:placeholder-shown))~label {
+    transform: translateY(-50%) scale(.8);
+    color: var(--secondary-blue);
+
+    padding: 0 0 20px 0;
+}
+
+.input-group input:not(:valid):not(:placeholder-shown) {
+    border-bottom: 1px solid red;
+}
+
+.input-group input:not(:valid):not(:placeholder-shown)~label {
+    transform: translateY(-50%) scale(.8);
+    color: red;
+    padding: 0 0 20px 0;
+
+}

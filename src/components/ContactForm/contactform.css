@@ -1,0 +1,12 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 80px 0;
+    
+    width: 50%;
+}
+
+.contact-form .secondary-btn {
+    align-self: flex-end;
+    
+}

@@ -7,11 +7,21 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 // Style
 import './button.css'
 
-export function Button({ className, name }) {
+export function Button({link, className, name }) {
+
+    const handleOnClick = () => {
+        if (link) {
+            window.open(link, '_blank')
+            console.log(link);
+        }
+    }
+
     return (
         <button
             className={className}
-            type="submit">
+            type="submit"
+            onClick={link ? handleOnClick : undefined}
+            >
             {name}
             <div className="btn-right">
                 <IoIosArrowRoundForward
