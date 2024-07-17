@@ -101,7 +101,7 @@ function App() {
 
             <img className='w-64 mx-auto md:mx-0' src='/leeSign.svg' alt="Lee-sign" />
             <div className='flex justify-center md:justify-end'>
-              <PrimaryButton href='https://drive.google.com/file/d/1GmFm0CgRl8vtPTTWvOLQcdX5T8ahe9on/view?usp=sharing'>My Resume</PrimaryButton>
+              <PrimaryButton href='https://drive.google.com/file/d/1EeOYpaiPAp7Tz1-JVElNoNTYBvdz6PjR/view'>My Resume</PrimaryButton>
             </div>
           </article>
         </SectionLayout>
