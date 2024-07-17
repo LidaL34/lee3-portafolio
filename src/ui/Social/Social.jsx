@@ -19,6 +19,7 @@ function SocialIcon({ link, icon }) {
     return (
         <a
             href={link}
+            target="_blank"
             className="w-[48px] h-[48px] rounded-full grid place-items-center border-2 text-[#00A3FF] border-[#00A3FF] transition-colors hover:bg-[#00A3FF] hover:text-black">
             {icon}
         </a>
