@@ -12,6 +12,8 @@ import { InteractiveIcon, PixelIcon, UserIcon } from './components/Icons';
 import { HeroSvg } from './components/HeroSvg';
 import { HeroMobileSvg } from './components/HeroMobileSvg';
 import { SectionLayout } from './components/SectionLayout';
+import { PrimaryButton } from './components/PrimaryButton';
+import { Bento } from './components/Bento';
 
 function App() {
 
@@ -77,37 +79,15 @@ function App() {
           </article>
         </SectionLayout>
 
-        <SectionLayout
-          id='myWork'
-          className="my-work-section">
-          <div className="my-work-title">
+        <SectionLayout className='flex flex-col gap-12'>
+          <div className="flex items-end justify-between">
             <Title
-              sectionTitle={'My Work'}
+              sectionTitle='My Work'
             />
-            <Button
-              link={'https://www.behance.net/lidaloaiza'}
-              className={'primary-btn'}
-              name={'More Projects'} />
+            <PrimaryButton href='https://www.behance.net/lidaloaiza'>More Projects</PrimaryButton>
           </div>
 
-          <article className='projects-grid'>
-            <Project
-              beLink={'https://www.behance.net/gallery/158336877/NEXUS-UI-PROYECT'}
-              name={'Nexus'}
-              category={'UI Project'} />
-            <Project
-              beLink={'https://www.behance.net/gallery/172658785/Marketplace-UXUI-Project'}
-              name={'Marketplace'}
-              category={'UX UI Projct'} />
-            <Project
-              beLink={''}
-              name={'Cleo'}
-              category={'Metaverse Interface'} />
-            <Project
-              beLink={'https://www.behance.net/gallery/155575969/On-Check-UXUI-PROJECT'}
-              name={'OnCheck'}
-              category={'UX UI Projct'} />
-          </article>
+          <Bento/>
         </SectionLayout>
 
         <SectionLayout
