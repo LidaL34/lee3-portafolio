@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: Gilroy;
   src: url(../src/assets/fonts/Gilroy-Regular.ttf) format('truetype');
@@ -22,80 +26,31 @@
 }
 
 :root {
-  /* Colors */
-  --main-black: #000000;
-  --grey: #0B0C10;
-  --secondary-grey: #7B7B7B;
-  --white: #FFFFFF;
-  --purple: #DEDEF8;
-  --secondary-blue: #00A3FF;
-  --secondary-purple: #2A00A4;
-
-  line-height: 1.5;
-
-  background: var(--main-black);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-
+  max-width: 1800px;
+  margin: auto;
+  color-scheme: dark;
   font-family: Gilroy;
-
-
-  cursor: default;
-
+  background-color: black;
+  overflow-x: hidden;
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
-.container {
-  margin: 0 124px;
-}
+@keyframes cambiarColor {
 
-h1 {
-  font: 700 66px Gilroy;
-  color: var(--white);
-}
-
-h3 {
-  font : 500 34px Gilroy;
-  color: var(--purple);
-}
-
-p {
-  font-family: Gilroy;
-  font-size: 24px;
-  color: var(--purple);
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  color: var(--white);
-  font-size: 20px;
-}
-
-li:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-
-@media screen and (max-width : 1440px) {
-  .container {
-    margin: 0 104px;
+  0% {
+    color: #00A3FF;
   }
+
+
+  100% {
+    color: #2A00A4;
+  }
+}
+
+.animated-hero {
+  animation: cambiarColor 10s infinite alternate-reverse;
 }

@@ -4,9 +4,6 @@ import { headerNavLinks } from '../../const/headerNavLinks';
 // Images
 import lee3logo from '/lee3-logo.svg'
 
-// Styles
-import './header.css';
-
 export function Header() {
 
     const handleOnClick = (scrollId) => {
@@ -14,7 +11,7 @@ export function Header() {
         if (scrollId) {
             console.log(scrollId);
             const element = document.getElementById(scrollId)
-            element.scrollIntoView({behavior : 'smooth'})
+            element.scrollIntoView({ behavior: 'smooth' })
         }
 
     }
@@ -22,23 +19,10 @@ export function Header() {
 
     return (
         <>
-            <header className="header container">
-                <img src={lee3logo} alt="lee3-logo" />
-                <div className="links">
-                    <ul>
-                        {
-                            headerNavLinks.map(({ id, name, scrollTo }) => {
-                                return (
-                                    <li 
-                                    key={id}
-                                    onClick={() => handleOnClick(scrollTo)}>
-                                        {name}
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
+            <header className="hidden md:grid place-items-center absolute w-full top-0 py-8">
+                <picture>
+                    <img className='w-[29px]' src={lee3logo} alt="lee3-logo" />
+                </picture>
             </header>
         </>
     )
